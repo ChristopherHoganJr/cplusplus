@@ -6,14 +6,14 @@ void PrintIntroduction(int Difficulty)
     // Print welcome messages to the terminal
     std::cout << std::endl;
     std::cout << "Agent 6, we need your hacking skills to break the level " << Difficulty << " security pin \n";
-    std::cout << "Enter the pin so we can get throught this door \n\n";
+    std::cout << "Enter the pin so we can get through this door \n\n";
 }
 
 bool PlayGame(int Difficulty)
 {
     PrintIntroduction(Difficulty);
 
-    // Declare 3 number code
+    // Declare 3 number variables
     const int CodeA = rand() % Difficulty + Difficulty;
     const int CodeB = rand() % Difficulty + Difficulty;
     const int CodeC = rand() % Difficulty + Difficulty;
@@ -55,7 +55,6 @@ int main()
 
     while (LevelDifficulty <= MaxDifficulty) // Loop until all levels are completed
     {
-        std::cout << rand() % 2 << "\n";
         bool bLevelComplete = PlayGame(LevelDifficulty);
         std::cin.clear(); // Clears any errors
         std::cin.ignore(); // Discards the buffer
