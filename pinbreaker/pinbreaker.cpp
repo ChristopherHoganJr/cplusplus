@@ -5,7 +5,7 @@ void PrintIntroduction(int Difficulty)
 {
     // Print welcome messages to the terminal
     std::cout << std::endl;
-    std::cout << "Agent 6, we need your hacking skills to break the level " << Difficulty << " security pin \n";
+    std::cout << "Agent, we need your hacking skills to break the level " << Difficulty << " security pin \n";
     std::cout << "Enter the pin so we can get through this door \n\n";
 }
 
@@ -37,12 +37,12 @@ bool PlayGame(int Difficulty)
     // Check if the players guess is correct
     if (GuessSum == CodeSum && GuessProduct == CodeProduct)
     {
-        std::cout << "Good work Agent 6. Let's move on.\n";
+        std::cout << "Good work Agent. Let's move on.\n";
         return true;
     }
     else
     {
-        std::cout << "Be careful Agent 6. Try again.\n";
+        std::cout << "Be careful Agent. Try again.\n";
         return false;
     }
 }
@@ -65,7 +65,7 @@ int main()
         }
     }
     
-    std::cout << "\nGreat work Agent 6. You gained access and were undetected. Gather the intel and get out of there.\n";
+    std::cout << "\nGreat work Agent. You gained access and were undetected. Gather the intel and get out of there.\n";
 
     return 0;
 }
